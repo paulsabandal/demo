@@ -1,8 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-
+import HeroThumbnail from '../img/hero-thumbnail.png'
 import Layout from '../components/Layout'
+import SignUp from '../img/sign-up.svg'
+import Create from '../img/create.svg'
+import Cascade from '../img/cascade.svg'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
@@ -16,96 +19,56 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
-        }}
-      >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {title}
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {subheading}
-        </h3>
+    <section class="hero">
+      <div class="hero-body">
+        <div className="container is-column">
+          <div className="columns ">
+            <div className="column is-6">
+              <h2 class="title hero-heading">
+                Where wholesaling meets group buying.
+              </h2>
+              <h2 class="subtitle hero-subheading">
+                Boost your sales and profit by selling your products in wholesale to your customers as they form a group to chip-in for it!
+                <br />  <br /> We're launching on <strong> Q2 2021. 🚀  </strong>
+              </h2>
+              <a href="/contact" class="button is-large is-warning">Sign-up as a Merchant</a>
+
+
+            </div>
+            <div className="column is-6 has-text-centered">
+              <img src={HeroThumbnail} class="hero-thumbnail" />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
+    </section>
+    <section id="how-it-works" class="hero is-medium process-section">
+      <div class="hero-body">
+        <div className="container">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
-              </div>
+            <div className="column is-4">
+              <h1 class="section-title">
+                How it works.
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="columns">
+            <div className="column is-4 entry">
+              <img src={SignUp} class="image" />
+              <h5 class="title">1. Sign-up as Merchant</h5>
+              <p class="description">Let's work together to assess your company or project objectives. Strategize how can we collaborate as the project moves forward and layout plans for it.</p>
+            </div>
+            <div className="column is-4 entry">
+              <img src={Create} class="image" />
+              <h5 class="title">2. List what products to wholesale.</h5>
+              <p class="description">Of course, here's where we design the flow, the screens on how the project will be look like before coding it.</p>
+            </div>
+            <div className="column is-4 entry">
+              <img src={Cascade} class="image" />
+              <h5 class="title">3. Share and let your buyers form as a group to buy.</h5>
+              <p class="description">And lastly, we're gonna code the designed idea and turn it into a viable product.</p>
             </div>
           </div>
         </div>

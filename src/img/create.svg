@@ -1,0 +1,14 @@
+<svg width="95" height="77" viewBox="0 0 95 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="59" cy="41" r="36" fill="#FFCE50"/>
+<path d="M34 62H6V2H54V32" stroke="#111111" stroke-width="4" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M27 16H43" stroke="#111111" stroke-width="4" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M17 46H30" stroke="#111111" stroke-width="4" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M17 16H20" stroke="#111111" stroke-width="4" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M27 26H43" stroke="#111111" stroke-width="4" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M17 26H20" stroke="#111111" stroke-width="4" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M27 36H36" stroke="#111111" stroke-width="4" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M17 36H20" stroke="#111111" stroke-width="4" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M49 46V54" stroke="#111111" stroke-width="4" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M45 50H53" stroke="#111111" stroke-width="4" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M49 62C55.6274 62 61 56.6274 61 50C61 43.3726 55.6274 38 49 38C42.3726 38 37 43.3726 37 50C37 56.6274 42.3726 62 49 62Z" stroke="#111111" stroke-width="4" stroke-miterlimit="10" stroke-linecap="square"/>
+</svg>

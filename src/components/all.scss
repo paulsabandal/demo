@@ -1,0 +1,393 @@
+// If need, change your variables before importing Bulma
+
+@import "~bulma/bulma.sass";
+@import "../styles/typography.scss";
+
+$cofound-green: #3A3A3A;
+$cofound-orange: #E56218;
+$white: #ffffff;
+$grey: #DADADA;
+$primary-type: 'Sailec', sans-serif;
+$secondary-type: 'IBM Plex Sans', sans-serif;
+
+.navbar-item img {
+    max-height: auto;
+}
+
+.navbar {
+    padding: 16px 0;
+}
+
+body {
+    font-family: $secondary-type;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $primary-type;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1216px) {
+    .container {
+        max-width: 1240px;
+    }
+}
+
+.hero-heading {
+    color: $cofound-green;
+    font-size: 3.25rem;
+    padding-bottom: 24px;
+    padding-top: 80px;
+}
+
+.hero-subheading {
+    font-family: $secondary-type;
+    line-height: 1.5;
+}
+
+.hero-thumbnail {
+    width: 420px;
+}
+
+@media screen and (max-width: 1023px) {
+    .hero-heading {
+        font-size: 2.5rem;
+    }
+
+    .hero-subheading {
+        font-size: 1rem;
+    }
+}
+
+.brand-element {
+    position: fixed;
+    right: -24px;
+    bottom: -80px;
+    z-index: -1;
+}
+
+.brand-element-2 {
+    position: absolute;
+    right: -24px;
+    bottom: -280px;
+    z-index: -0;
+}
+
+.down-arrow {
+    padding-top: 48px;
+}
+
+.works-section {
+    padding-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+    background: $white;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 40vw;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: $cofound-green;
+        z-index: -1;
+        margin: 0;
+    }
+
+    .section-title {
+        color: $white;
+        font-size: 2.75rem;
+    }
+
+    .description {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+
+        .category {
+            text-transform: uppercase;
+            color: $white;
+            font-weight: 400;
+            padding-bottom: 24px;
+        }
+
+        .name {
+            color: $white;
+            font-size: 2rem;
+        }
+
+        .caption {
+            color: #aaaaaa;
+            font-size: 1rem;
+            padding-top: 24px;
+        }
+
+        .button {
+            margin-top: 24px;
+        }
+    }
+
+    .left-pagination {
+        padding-top: 0rem;
+    }
+
+    .mockup {
+        max-width: 512px;
+        padding-top: 120px;
+        padding-left: 64px;
+    }
+
+    .pagination-link {
+        color: $white;
+    }
+
+    @media screen and (max-width: 1023px) {
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .description {
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+
+            .name {
+                font-size: 1.5rem;
+            }
+
+            .category {
+                font-size: 0.875rem;
+            }
+        }
+
+        .left-pagination {
+            padding-top: 1rem;
+        }
+    
+        .mockup {
+            max-width: 320px;
+            padding-top: 32px;
+            padding-left: 0;
+        }
+
+        &:before {
+            width: 100vw;
+        }
+    }
+}
+
+
+.process-section {
+    background-color: #FFFEF8;
+
+    .section-title {
+        color: $cofound-green;
+        font-size: 2.75rem;
+    }
+
+    .entry {
+        .image {
+            padding: 4rem 4rem 6rem;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            padding-left: 2rem;
+            color: $cofound-green;
+        }
+
+        .description {
+            padding-right: 6rem;
+            padding-left: 2rem;
+            line-height: 1.8;
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        .section-title {
+            font-size: 2rem;
+        }
+        .entry {
+            .image {
+                padding-bottom: 2rem;
+                padding-left: 0;
+                max-width: 180px;
+            }
+
+            .title {
+                padding-left: 0;
+            }
+
+            .description {
+                padding: 0;
+            }
+        }
+    }
+}
+
+.services-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    background: $white;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 40vw;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: $cofound-green;
+        z-index: -1;
+        margin: 0;
+    }
+
+    .section-title {
+        color: $white;
+        font-size: 2.75rem;
+    }
+
+    .description {
+        font-size: 1.25rem;
+        color: $grey;
+        padding-top: 2rem;
+    }
+
+    .services-2 {
+        padding-top: 32px;
+    }
+
+    .service-name {
+        color: $cofound-green;
+        font-size: 1.5rem;
+        padding-bottom: 8px;
+    }
+
+    .service-list {
+        line-height: 2;
+    }
+
+    @media screen and (max-width: 1023px) {
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .description {
+            font-size: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+        }
+
+        &:before {
+            width: 100vw;
+        }
+
+        .service-list {
+            color: $white;
+            padding-bottom: 32px;
+        }
+
+        .service-name {
+            color: $white;
+        }
+
+        .services-2 {
+            z-index: 1;
+            padding-top: 0;
+            position: relative;
+        }
+
+        .brand-element-2 {
+            right: -120px;
+        }
+    
+    }
+}
+
+.contact-section {
+    background: $cofound-green;
+
+    .section-title {
+        color: $white;
+        font-size: 2.75rem;
+    }
+
+    .description {
+        font-size: 1.25rem;
+        color: $grey;
+        padding-bottom: 2rem;
+    }
+
+    @media screen and (max-width: 1023px) {
+        padding: 0  rem 0 3rem;
+
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .description {
+            font-size: 1rem;
+        }
+    }
+}
+
+
+.button {
+    font-family: $primary-type;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    &.is-warning {
+        background-color: $cofound-orange;
+        color: $white;
+    }
+
+    &.is-small {
+        height: 40px;
+    }
+
+    &.is-large {
+        font-size: 1.25rem;
+    }
+
+    &.is-warning {
+        background-color: #FFD130;
+        color: $cofound-green;
+    }
+}
+
+.menu-list {
+    a {
+        display: inline-block;
+    }
+
+    a:first {
+        padding-left: 0;
+    }
+    @media screen and (max-width: 1023px) {
+        a { 
+            display: block;
+            text-align: left;
+            padding-left: 0.5rem;
+        }
+    }
+}
+
+.footer-logo {
+    max-width: 240px;
+}
+
+.footer-text {
+    font-size: 0.825rem;
+    padding-top: 24px;
+    max-width: 320px;
+}
+
+
