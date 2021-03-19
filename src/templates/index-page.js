@@ -58,17 +58,19 @@ export const IndexPageTemplate = ({
             <div className="column is-4 entry">
               <img src={SignUp} class="image" />
               <h5 class="title">1. Sign-up as Merchant</h5>
-              <p class="description">Let's work together to assess your company or project objectives. Strategize how can we collaborate as the project moves forward and layout plans for it.</p>
+              <p class="description">
+                Register with name, email and kind of business. Setup your preferred payment method for pay-outs, shipping information and your ready to list.
+              </p>
             </div>
             <div className="column is-4 entry">
               <img src={Create} class="image" />
               <h5 class="title">2. List what products to wholesale.</h5>
-              <p class="description">Of course, here's where we design the flow, the screens on how the project will be look like before coding it.</p>
+              <p class="description">Create a product that is ready for wholesale. Input quantity, upload photo, sale expiration and other details that includes your Cheap In sale.</p>
             </div>
             <div className="column is-4 entry">
               <img src={Cascade} class="image" />
               <h5 class="title">3. Share and let your buyers form as a group to buy.</h5>
-              <p class="description">And lastly, we're gonna code the designed idea and turn it into a viable product.</p>
+              <p class="description">Cascade it to Facebook community, trusted buyers and let them know that your selling your product CHEAPER if they can form a group.</p>
             </div>
           </div>
         </div>
