@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Cheap In - Wholesale price for group buyers',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'A platform where interested buyers can form a group with other buyers to meet the required number of orders. The group of buyers "chip in" to purchase their desired products at a cheaper, wholesale price.'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
