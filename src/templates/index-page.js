@@ -29,7 +29,7 @@ export const IndexPageTemplate = ({
               </h2>
               <h2 class="subtitle hero-subheading">
                 Boost your sales and profit by selling your products in wholesale to your customers as they form a group to chip-in for it!
-                <br />  <br /> We're launching on <strong> Q2 2021. 🚀  </strong>
+                <br />  <br /> We're launching on <strong> Q3 2021. 🚀  </strong>
               </h2>
               <a href="/contact" class="button is-large is-warning">Sign-up as a Merchant</a>
 
